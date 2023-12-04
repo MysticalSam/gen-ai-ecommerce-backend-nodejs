@@ -48,6 +48,24 @@ npm run dev
 ```
 npm run start
 ```
+* API Endpoints
+
+```
+post: /api/v1/auth/login                {"email": String, "password": String}
+post: /api/v1/auth/changepassword       {"oldPassword": String, "newPassword": String}  {Bearer Toekn Required}
+post: /api/v1/users/register            {"firstName": String, "lastName": String, "email": String, "password": String}
+get:  /api/v1/users/all
+get:  /api/v1/users/profile             {Bearer Toekn Required}
+get:  /api/v1/products/all
+get:  /api/v1/products/id/:id
+get:  /api/v1/products/add
+get:  /api/v1/cart/                     {Bearer Toekn Required}
+post: /api/v1/cart/add                  {"productId": Number, "quantity": Number}   {Bearer Toekn Required}
+post: /api/v1/cart/update               {"_id": Number(Cart ID), "productId": Number, "quantity": Number}   {Bearer Toekn Required}
+post: /api/v1/checkout/                 {"paymentMode": String, "firstName": String, "lastName": String, "streetAddress": String, "city": String, "state": String, "pincode": Number, "mobile": Number} {Bearer Toekn Required}
+
+```
+
 
 ## Help
 
