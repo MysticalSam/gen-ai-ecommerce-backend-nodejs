@@ -27,7 +27,7 @@ This project is created with the help of Gen-AI (Codewhispere) and extensive lea
 
 ### Executing program
 
-* Check with commands below
+* Check versions of node and npm with commands below
 ```
 node -v
 npm -v
@@ -58,7 +58,8 @@ Contact Me.
 Developer:
 
 Suram Singh  
-[@MysticalSam](https://twitter.com/MysticalSam)
+
+[Website](https://suramsingh.com/)
 
 ## Version History
 
